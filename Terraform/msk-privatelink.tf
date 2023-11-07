@@ -86,3 +86,9 @@ resource "aws_vpc_endpoint_service" "privatelink" {
     BrokerFqdn = aws_lb.brokers[count.index].tags["BrokerFqdn"]
   }
 }
+
+variable "broker_count" {}
+variable "msk_port" {}
+variable "vpc_id" {}
+variable "enable_privatelink" {}
+variable "region" {}
