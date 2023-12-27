@@ -11,6 +11,7 @@ GRANT ALL PRIVILEGES ON DATABASE :"new_database" TO :"new_username";
 
 \c :"new_database"
 GRANT USAGE ON SCHEMA public TO :"new_username";
+GRANT CREATE ON SCHEMA public TO :"new_username";
 
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO :"new_username";
 GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO :"new_username";
